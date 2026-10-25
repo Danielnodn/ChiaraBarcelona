@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiara Barcelona — Bolsos de piel hechos a mano</title>
+  <meta name="description" content="Chiara Barcelona. Bolsos de piel elegantes, espaciosos y versátiles, hechos a mano. Producciones limitadas para la mujer urbana moderna." />
+  
+  <!-- FAVICON INTEGRADO (Círculo negro con c) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%231d1a16'/><text x='50' y='68' font-family='sans-serif' font-weight='500' font-size='55' text-anchor='middle' fill='%23f6f1e8'>c</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce">
+    Envío gratuito en España · Producciones limitadas · Hecho a mano en Barcelona
+  </div>
+
+    <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="logo" aria-label="Chiara Barcelona">
+      <svg viewBox="0 0 120 120" class="logo-svg" aria-hidden="true">
+        <circle cx="60" cy="60" r="58" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="60" y="58" font-family="'Jost', sans-serif" font-weight="500" font-size="24" letter-spacing="2" text-anchor="middle" fill="currentColor">chiara</text>
+        <text x="60" y="76" font-family="'Jost', sans-serif" font-weight="300" font-size="9" letter-spacing="1.5" text-anchor="middle" fill="currentColor">— barcelona —</text>
+      </svg>
+    </a>
+    <nav class="nav-links">
+      <!-- Updated Links -->
+      <a href="#top">El bolso</a>
+      <a href="#artesania">Artesanía</a>
+      <a href="#mujer">Mujer Chiara</a>
+      <a href="#comunidad">Comunidad</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cart-toggle" aria-label="Abrir carrito">
+        Carrito <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO / PRODUCTO -->
+  <section id="top" class="product-section">
+    
+    <!-- GALERÍA DE IMÁGENES -->
+    <div class="product-gallery">
+      <div class="main-image-container">
+        <!-- Imagen principal controlada por JS -->
+        <img id="main-image" alt="Bolso Chiara" class="main-image">
+      </div>
+      <div class="thumbnail-list" id="thumbnail-container">
+        <!-- Las miniaturas se generan con JS -->
+      </div>
+    </div>
+
+    <!-- INFORMACIÓN Y COMPRA -->
+    <div class="product-info">
+      <p class="eyebrow">Más que un bolso, un estilo de vida.</p>
+      <h1>El bolso Chiara.</h1>
+      <p class="price">€ 295</p>
+      
+      <p class="lead">
+        Un bolso de piel hecho a mano que resuelve y organiza tu día a día. Exterior limpio, interior espacioso y la versatilidad perfecta para cualquier outfit.
+      </p>
+
+      <div class="inline-shop">
+        <div class="option-group">
+          <span class="option-label">Color: <strong id="color-name">Negro</strong></span>
+          <div class="swatches" id="swatch-container">
+            <!-- Los swatches se generan con JS -->
+          </div>
+        </div>
+        <button id="add-to-cart" class="btn btn-primary btn-full">Añadir al carrito — € 295</button>
+      </div>
+
+      <ul class="hero-badges">
+        <li>Envío gratuito</li>
+        <li>Hecho a mano en España</li>
+        <li>Devoluciones 30 días</li>
+      </ul>
+
+      <details class="accordion">
+        <summary>Ver características del bolso</summary>
+        <ul class="product-details">
+          <li><strong>Material:</strong> Piel de alta calidad, curtida artesanalmente</li>
+          <li><strong>Acabado:</strong> Pigmentos y ceras naturales</li>
+          <li><strong>Interior:</strong> Organizador con múltiples compartimentos</li>
+          <li><strong>Medidas:</strong> 35cm x 25cm x 18cm (espacioso y versátil)</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- VALUE PROPS -->
+  <section class="values">
+    <div class="value">
+      <h3>Diseño que resuelve</h3>
+      <p>Líneas puras. Exterior limpio, interior organizado y espacioso.</p>
+    </div>
+    <div class="value">
+      <h3>Hecho a mano</h3>
+      <p>Artesanos expertos. Conocimiento tradicional y diseño contemporáneo.</p>
+    </div>
+    <div class="value">
+      <h3>Sin fast fashion</h3>
+      <p>Producciones limitadas con pigmentos y ceras naturales.</p>
+    </div>
+    <div class="value">
+      <h3>Para tus facetas</h3>
+      <p>De una cena elegante a un viaje o un día de trabajo intenso.</p>
+    </div>
+  </section>
+
+  <!-- CRAFTSMANSHIP -->
+  <section id="artesania" class="section split dark">
+    <div class="split-media">
+      <!-- Imagen controlada por JS -->
+      <img id="img-artesania" alt="Pieles curtidas artesanalmente" class="media-img">
+    </div>
+    <div class="split-copy">
+      <p class="eyebrow">Fabricación</p>
+      <h2>Artesanía, no<br>producción en masa.</h2>
+      <p>En Chiara, nuestros artesanos crean bolsos de piel hechos a mano bajo altos estándares de fabricación, con diseños únicos que realzan su funcionalidad, calidad y estilo.</p>
+      <p>Fusionamos el conocimiento tradicional y el diseño contemporáneo, porque una mujer moderna necesita un bolso resistente y fiable que la haga sentir libre.</p>
+      <ul class="pillars">
+        <li>Piel de alta calidad</li>
+        <li>Hecho a mano en España</li>
+        <li>Producción limitada</li>
+        <li>Acabados naturales</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MUJER CHIARA -->
+  <section id="mujer" class="section split">
+    <div class="split-copy">
+      <p class="eyebrow">Mujer Chiara</p>
+      <h2>Imparable en todas<br>sus facetas.</h2>
+      <p>Una mujer que hace las cosas diferente, que no sigue las tendencias sino que se apropia de ellas para crear su propio estilo y deja huella a donde quiera que va.</p>
+      <ul class="traits">
+        <li>Sin prejuicios ni ataduras al pasado</li>
+        <li>Independiente</li>
+        <li>Disfruta la vida como una osada aventura</li>
+        <li>Adopta un estilo de vida más que una moda</li>
+      </ul>
+      <p class="accent">Mujer Chiara no es una sola. Mujer Chiara somos todas.</p>
+    </div>
+    <div class="split-media">
+      <!-- Imagen controlada por JS -->
+      <img id="img-mujer" alt="Mujer Chiara" class="media-img">
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <h2 class="center">Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Dónde se fabrican los bolsos?</summary>
+      <p>En España, en talleres artesanales, bajo altos estándares de fabricación.</p>
+    </details>
+    <details>
+      <summary>¿Los bolsos son de producción limitada?</summary>
+      <p>Sí. Confeccionamos producciones limitadas para crear piezas únicas que trascienden el tiempo.</p>
+    </details>
+    <details>
+      <summary>¿Cuánto tarda el envío?</summary>
+      <p>Envío gratuito en España peninsular. Recibirás tu bolso en 2–5 días laborables.</p>
+    </details>
+    <details>
+      <summary>¿Puedo devolverlo?</summary>
+      <p>Sí, dispones de 30 días para devoluciones gratuitas.</p>
+    </details>
+  </section>
+
+    <!-- NEWSLETTER -->
+  <section id="comunidad" class="section newsletter">
+    <p class="eyebrow center">Newsletter</p>
+    <h2 class="center max">Sé la primera en descubrir<br>nuevas producciones.</h2>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='¡Gracias!';">
+      <input type="email" placeholder="Tu email" required aria-label="Tu email" />
+      <button type="submit" class="btn btn-primary">Suscribirme</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom: 1rem;">
+         <svg viewBox="0 0 120 120" style="width: 80px; height: 80px; color: #d8b48f;" aria-hidden="true">
+          <circle cx="60" cy="60" r="58" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <text x="60" y="58" font-family="'Jost', sans-serif" font-weight="500" font-size="24" letter-spacing="2" text-anchor="middle" fill="currentColor">chiara</text>
+          <text x="60" y="76" font-family="'Jost', sans-serif" font-weight="300" font-size="9" letter-spacing="1.5" text-anchor="middle" fill="currentColor">— barcelona —</text>
+        </svg>
+      </div>
+      <p>Más que un bolso, un estilo de vida.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Tienda</h4>
+        <a href="#top">El bolso</a>
+        <a href="#artesania">Artesanía</a>
+        <a href="#mujer">Mujer Chiara</a>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#">Envíos y devoluciones</a>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Chiara Barcelona · Hecho con cariño en Barcelona</p>
+  </footer>
+
+  <!-- SLIDE-OUT CART -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button id="close-cart" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div class="cart-body">
+      <div class="cart-item">
+        <!-- Imagen del carrito controlada por JS -->
+        <img id="cart-item-img" alt="Bolso Chiara">
+        <div>
+          <p><strong>Bolso Chiara</strong></p>
+          <p class="cart-color-text">Color: <span id="cart-color">Negro</span></p>
+          <p class="price">€ 295</p>
+        </div>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <button class="btn btn-primary btn-full">Finalizar compra</button>
+      <button class="btn btn-ghost btn-full" id="continue-shopping" style="margin-top: 10px;">Seguir comprando</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
